@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
+use CodeIgniter\Debug\Toolbar\Collectors\Views;
 use CodeIgniter\HTTP\CLIRequest;
 use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
@@ -54,5 +55,13 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = service('session');
+    }
+    public function loadLayout($data,$content=null,$dataconten = []){
+        $data['Header'] = view('client/header');
+        $data['Footer'] = view('client/footer');
+        if(!is_null($content)){
+            $data['content'] = view($content,$dataconten);
+        }
+        return $data;
     }
 }
