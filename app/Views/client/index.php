@@ -53,9 +53,7 @@
         }
     </style>
 </head>
-
 <body class="home">
-
     <!--header starts-->
     <?= $Header?>
     <!-- banner part starts -->
