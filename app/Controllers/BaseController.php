@@ -64,4 +64,18 @@ abstract class BaseController extends Controller
         }
         return $data;
     }
+    public function loadLayoutAdmin($data, $content = null, $dataconten = [])
+{
+    // Luôn load Header
+    $data['Header'] = view('admin/Header');
+
+    // Nếu có nội dung chính thì load
+    if (!is_null($content)) {
+        $data['content'] = view($content, $dataconten);
+    }
+
+    return $data;
+}
+
+    
 }

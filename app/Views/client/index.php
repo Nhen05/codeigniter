@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
  
     <meta charset="utf-8">
@@ -11,7 +10,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <base href="<?php base_url()?>">
+    <base href="<?=base_url()?>">
     <link rel="icon" href="#">
     <title>TH Team</title>
     <!-- Bootstrap core CSS -->

@@ -1,0 +1,495 @@
+CRITICAL - 2025-04-16 13:13:15 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:13:30 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/restaurants]
+in APPPATH\Views\admin\all_restaurant.php on line 25.
+ 1 APPPATH\Views\admin\all_restaurant.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/all_restaurant', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('admin/all_restaurant')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->resList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:13:41 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/add-category]
+in APPPATH\Views\admin\add_category.php on line 28.
+ 1 APPPATH\Views\admin\add_category.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/add_category', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('admin/add_category')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->addCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:14:51 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/add-category]
+in APPPATH\Views\admin\add_category.php on line 28.
+ 1 APPPATH\Views\admin\add_category.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/add_category', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('admin/add_category')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->addCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:14:52 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/add-category]
+in APPPATH\Views\admin\add_category.php on line 28.
+ 1 APPPATH\Views\admin\add_category.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/add_category', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('admin/add_category')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->addCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:14:52 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/add-category]
+in APPPATH\Views\admin\add_category.php on line 28.
+ 1 APPPATH\Views\admin\add_category.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/add_category', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('admin/add_category')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->addCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:14:52 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/add-category]
+in APPPATH\Views\admin\add_category.php on line 28.
+ 1 APPPATH\Views\admin\add_category.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/add_category', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('admin/add_category')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->addCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:15:58 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/add-category]
+in APPPATH\Views\admin\add_category.php on line 28.
+ 1 APPPATH\Views\admin\add_category.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/add_category', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('admin/add_category')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->addCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:15:58 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/add-category]
+in APPPATH\Views\admin\add_category.php on line 28.
+ 1 APPPATH\Views\admin\add_category.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\add_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/add_category', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('admin/add_category')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->addCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:19:46 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:23:57 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/restaurants]
+in APPPATH\Views\admin\all_restaurant.php on line 25.
+ 1 APPPATH\Views\admin\all_restaurant.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/all_restaurant', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('admin/all_restaurant')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->resList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:27:06 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/restaurants]
+in APPPATH\Views\admin\all_restaurant.php on line 25.
+ 1 APPPATH\Views\admin\all_restaurant.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/all_restaurant', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('admin/all_restaurant')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->resList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:27:08 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/restaurants]
+in APPPATH\Views\admin\all_restaurant.php on line 25.
+ 1 APPPATH\Views\admin\all_restaurant.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/all_restaurant', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('admin/all_restaurant')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->resList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:27:53 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/restaurants]
+in APPPATH\Views\admin\all_restaurant.php on line 25.
+ 1 APPPATH\Views\admin\all_restaurant.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\all_restaurant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/all_restaurant', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('admin/all_restaurant')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->resList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:27:59 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:30:44 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:30:44 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:30:48 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:30:49 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:32:23 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:32:24 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:32:26 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:38:56 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:42:09 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/reports]
+in APPPATH\Views\admin\reports.php on line 26.
+ 1 APPPATH\Views\admin\reports.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/reports', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('admin/reports')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:42:54 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/reports]
+in APPPATH\Views\admin\reports.php on line 26.
+ 1 APPPATH\Views\admin\reports.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/reports', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('admin/reports')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:42:55 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/reports]
+in APPPATH\Views\admin\reports.php on line 26.
+ 1 APPPATH\Views\admin\reports.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/reports', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('admin/reports')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:42:55 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/reports]
+in APPPATH\Views\admin\reports.php on line 26.
+ 1 APPPATH\Views\admin\reports.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/reports', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('admin/reports')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:42:56 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/reports]
+in APPPATH\Views\admin\reports.php on line 26.
+ 1 APPPATH\Views\admin\reports.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/reports', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('admin/reports')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:43:19 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/reports]
+in APPPATH\Views\admin\reports.php on line 26.
+ 1 APPPATH\Views\admin\reports.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/reports', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('admin/reports')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:43:20 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/reports]
+in APPPATH\Views\admin\reports.php on line 26.
+ 1 APPPATH\Views\admin\reports.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/reports', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('admin/reports')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:50:58 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(43): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:50:59 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(43): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->das()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-16 13:59:30 --> ErrorException: Undefined variable $Header
+[Method: GET, Route: admin/reports]
+in APPPATH\Views\admin\reports.php on line 26.
+ 1 APPPATH\Views\admin\reports.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Header', 'C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\githubProject\\codeigniter\\app\\Views\\admin\\reports.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/reports', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('admin/reports', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\githubProject\\codeigniter\\public\\index.php')
