@@ -44,6 +44,7 @@ $success = session('MESSAGE_SUCCESS') ?? '';
 	<div class="info">
 		<h1>Administration</h1>
 	</div>
+<<<<<<< HEAD
 </div>
 
 <div class="form">
@@ -91,6 +92,52 @@ $success = session('MESSAGE_SUCCESS') ?? '';
 		<p class="message">Chưa đăng ký? <button onclick="create_account()">Đăng ký</button></p>
 	</div>
 </div>
+=======
+	<div class="form">
+		<div class="thumbnail"><img src="images/manager.png" /></div>
+		<div class="form-dangky">
+			<form class="register-form" action="create" method="post">
+				<input type="text" placeholder="username" name="username" />
+				<input type="text" placeholder="email address" name="email" />
+				<input type="password" placeholder="password" name="password" />
+				<input type="password" placeholder="Confirm password" name="repassword" />
+				<input type="submit" name="submit1" value="Đăng ký" />			
+			</form>
+			<p class="message">Đã có tài khoản <button onclick="sign_in()">Đăng nhập</button></p>
+		</div>
+		<span style="color:red;"></span>
+		<span style="color:green;"></span>
+		<div class="form-dangnhap">
+			<form class="login-form" action="index.php" method="post">
+				<input type="text" placeholder="username" name="username" />
+				<input type="password" placeholder="password" name="password" />
+				<input type="submit" name="submit" value="Đăng nhập" />
+				
+			</form>
+			<p class="message">Chưa đăng ký? <button onclick="create_account()">Đăng ký</button>
+			</p>
+		</div>
+	</div>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+	</script>
+	<script>
+
+		function create_account(){
+			$('.form-dangky').show();//hiển thị
+			$('.form-dangnhap').hide();//ẩn đi
+		}
+
+		function sign_in(){
+			$('.form-dangky').hide();
+			$('.form-dangnhap').show();
+		}
+
+	</script>
+
+
+
+>>>>>>> upstream/main
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>

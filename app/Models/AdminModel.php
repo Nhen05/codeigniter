@@ -1,10 +1,15 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/main
 namespace App\Models;
 
 use CodeIgniter\Model;
 
 class AdminModel extends Model
 {
+<<<<<<< HEAD
     // Tên bảng trong database để thao tác với dữ liệu admin
     protected $table = 'admin';
     
@@ -39,3 +44,7 @@ class AdminModel extends Model
         return $data;
     }
 }
+=======
+    protected $table = 'admin';//'admin'=>tên bảng trong CSDL    
+}
+>>>>>>> upstream/main

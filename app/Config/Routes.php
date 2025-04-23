@@ -16,8 +16,11 @@ $routes->group("admin",function($routes){
     $routes->get('login', 'admin\Login::index');
     $routes->post('login/process', 'admin\Login::process');
     $routes->get('dashboard', 'admin\Dashboard::index');
+<<<<<<< HEAD
     $routes->get('all_restaurant', 'admin\all_restaurant::index');
     $routes->get('add_restaurant', 'admin\add_restaurant::index');
     $routes->get('update_restaurant', 'admin\update_restaurant::index');
+=======
+>>>>>>> upstream/main
     $routes->post('create', 'admin\Login::create');
 });

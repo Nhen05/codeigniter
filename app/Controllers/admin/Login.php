@@ -5,6 +5,7 @@ use App\Controllers\BaseController;
 use App\Services\AdminService;
 
 class Login extends BaseController
+<<<<<<< HEAD
 {
     private $service;
 
@@ -16,6 +17,14 @@ class Login extends BaseController
     /**
      * Display registration page
      */
+=======
+{    
+    private $service;
+    public function __construct(){
+        $this->service = new AdminService();
+    }
+
+>>>>>>> upstream/main
     public function index(): string
     {
         return view('admin/index');  // Trả về trang đăng ký
@@ -80,5 +89,9 @@ class Login extends BaseController
 
         // Chuyển hướng đến trang dashboard
         return redirect()->to(base_url('admin/dashboard'));
+    }
+    public function create(){
+        $result = $this->service->themAdmin($this->request);
+        return redirect()->back()->withInput()->with($result['messageCode'],$result['messages']);
     }
 }
