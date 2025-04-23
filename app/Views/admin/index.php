@@ -83,7 +83,7 @@ $success = session('MESSAGE_SUCCESS') ?? '';
 
 	<!-- FORM ĐĂNG NHẬP -->
 	<div class="form-dangnhap" <?= $showRegisterForm ? 'style="display:none;"' : 'style="display:block;"' ?>>
-		<form class="login-form" action="index.php" method="post">
+		<form class="login-form" action="<?= base_url('admin/login/process') ?>" method="post">
 			<input type="text" placeholder="username" name="username" />
 			<input type="password" placeholder="password" name="password" />
 			<input type="submit" name="submit" value="Đăng nhập" />
