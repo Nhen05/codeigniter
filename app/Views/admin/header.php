@@ -35,7 +35,7 @@
                             alt="user" class="profile-pic" /></a>
                     <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                         <ul class="dropdown-user">
-                            <li><a href="logout.php"><i class="fa fa-power-off"></i> Logout</a></li>
+                        <li><a href="<?= base_url('admin/logout') ?>"><i class="fa fa-power-off"></i> Logout</a></li>
                         </ul>
                     </div>
                 </li>

@@ -26,7 +26,7 @@ class AdminService extends BaseService
             
             return [
                 'status'=> 'ERROR',
-                'messageCode'=>'MESSAGE_ERROR',
+                'messageCode'=>'MESSAGE_REGISTER_ERROR',
                 'messages'=> $validate->getErrors()
             ];
         }else{
@@ -37,14 +37,14 @@ class AdminService extends BaseService
                 $this->admins->save($dataSave);
                 return [
                     'status'=> 'SUCCESS',
-                    'messageCode'=>'MESSAGE_SUCCESS',
-                    'messages'=> ['MESSAGE_SUCCESS'=>'Đăng ký thành công']
+                    'messageCode'=>'MESSAGE_REGISTER_SUCCESS',
+                    'messages'=> ['MESSAGE_REGISTER_SUCCESS'=>'Đăng ký thành công']
                 ];
             } catch (Exception $e) {
                 return [
                     'status'=> 'ERROR',
-                    'messageCode'=>'MESSAGE_ERROR',
-                    'messages'=> ['MESSAGE_SUCCESS'=>$e->getMessage()]
+                    'messageCode'=>'MESSAGE_REGISTER_ERROR',
+                    'messages'=> ['MESSAGE_REGISTER_SUCCESS'=>$e->getMessage()]
                 ];
             }            
         }
@@ -84,4 +84,72 @@ class AdminService extends BaseService
         $this->validation->withRequest($requestData)->run();
         return $this->validation;
     }
+    private function validationLogin($requestData){
+         //1 mảng trong php
+        //$rule = []
+        $rule = [
+            'username'=>'required|max_length[30]|min_length[3]',
+            'password'=>'required|max_length[255]|min_length[3]'
+        ];
+        $message = [
+          
+            'username'=>[
+                'required'=>'Tên tài khoản không được để trống',
+                'max_length'=>'Tên tài khoản tối đa {param} ký tự',
+                'min_length'=>'Tên tài khoản ít nhất {param} ký tự'
+            ],
+            'password'=>[
+                'required'=>'Mật khẩu không được để trống',
+                'max_length'=>'Mật khẩu tối đa {param} ký tự',
+                'min_length'=>'Mật khẩu ít nhất {param} ký tự'
+            ]
+        ];
+        $this->validation->setRules($rule,$message);
+        //validation = [[rule],[message]]
+        $this->validation->withRequest($requestData)->run();
+        return $this->validation;
+    }
+  
+
+    public function kiemTralogin($requestData)
+    {
+    
+        $validate = $this->validationLogin($requestData);
+        if ($validate->getErrors()) {
+            return [
+                'status' => 'ERROR',
+                'messageCode' => 'MESSAGE_LOGIN_ERROR',
+                'messages' => $validate->getErrors()
+            ];
+        }
+        $data = $requestData->getPost();
+
+        $user = $this->layDataAdminTheoUsername($data['username']);
+        if (!$user) {
+            return [
+                'status' => 'MESSAGE_LOGIN_ERROR',
+                'messageCode' => 'MESSAGE_LOGIN_ERROR',
+                'messages' => ['MESSAGE_LOGIN_ERROR' => 'Tài khoản không tồn tại trong hệ thống!']
+            ];
+        }
+    
+        if (!password_verify($data['password'], $user['password'])) {
+            return [
+                'status' => 'ERROR',
+                'messageCode' => 'MESSAGE_LOGIN_ERROR',
+                'messages' => ['MESSAGE_LOGIN_ERROR' => 'Mật khẩu không khớp với hệ thống!']
+            ];
+        }
+        $session = session();
+        unset($user['password']);
+        $session->set('user_login', $user);
+    
+        return [
+            'status' => 'SUCCESS',
+            'messageCode' => 'MESSAGE_LOGIN_SUCCESS',
+            'messages' => ['MESSAGE_LOGIN_SUCCESS' => 'Đăng nhập thành công']
+        ];
+    }
+    
+    
 }

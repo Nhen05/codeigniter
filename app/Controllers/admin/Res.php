@@ -13,7 +13,7 @@ class Dashboard extends BaseController
 
         if (session()->has('user_login')) {
             $data['user'] = session()->get('user_login');
-            return view('admin/dashboard', $data);
+            return view('admin/resall', $data);
         } else {
             return redirect('admin/login');
         }

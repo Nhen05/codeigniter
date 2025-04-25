@@ -23,13 +23,11 @@
 </head>
 
 <body>
-
-	<!-- Toast Container -->
-	<div aria-live="polite" aria-atomic="true" class="position-relative">
+<div aria-live="polite" aria-atomic="true" class="position-relative">
 		<div class="toast-container position-absolute top-0 end-0 p-3">
 			<!-- Toast lỗi -->
-			<?php if(session()->getFlashdata('MESSAGE_ERROR')): ?>
-				<?php foreach(session()->getFlashdata('MESSAGE_ERROR') as $msg): ?>
+			<?php if(session()->getFlashdata('MESSAGE_LOGIN_ERROR')): ?>
+				<?php foreach(session()->getFlashdata('MESSAGE_LOGIN_ERROR') as $msg): ?>
 					<div class="toast align-items-center text-bg-danger border-0 mb-2" role="alert" aria-live="assertive" aria-atomic="true">
 						<div class="d-flex">
 							<div class="toast-body">
@@ -42,8 +40,8 @@
 			<?php endif; ?>
 
 			<!-- Toast thành công -->
-			<?php if(session()->getFlashdata('MESSAGE_SUCCESS')): ?>
-				<?php foreach(session()->getFlashdata('MESSAGE_SUCCESS') as $msg): ?>
+			<?php if(session()->getFlashdata('MESSAGE_LOGIN_SUCCESS')): ?>
+				<?php foreach(session()->getFlashdata('MESSAGE_LOGIN_SUCCESS') as $msg): ?>
 					<div class="toast align-items-center text-bg-success border-0 mb-2" role="alert" aria-live="assertive" aria-atomic="true">
 						<div class="d-flex">
 							<div class="toast-body">
@@ -56,7 +54,38 @@
 			<?php endif; ?>
 		</div>
 	</div>
+	<!-- Toast Container -->
+	<div aria-live="polite" aria-atomic="true" class="position-relative">
+		<div class="toast-container position-absolute top-0 end-0 p-3">
+			<!-- Toast lỗi -->
+			<?php if(session()->getFlashdata('MESSAGE_REGISTER_ERROR')): ?>
+				<?php foreach(session()->getFlashdata('MESSAGE_REGISTER_ERROR') as $msg): ?>
+					<div class="toast align-items-center text-bg-danger border-0 mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+						<div class="d-flex">
+							<div class="toast-body">
+								<strong>Thông báo:</strong> <?= esc($msg) ?>
+							</div>
+							<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			<?php endif; ?>
 
+			<!-- Toast thành công -->
+			<?php if(session()->getFlashdata('MESSAGE_REGISTER_SUCCESS')): ?>
+				<?php foreach(session()->getFlashdata('MESSAGE_REGISTER_SUCCESS') as $msg): ?>
+					<div class="toast align-items-center text-bg-success border-0 mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+						<div class="d-flex">
+							<div class="toast-body">
+								<strong>Thành công:</strong> <?= esc($msg) ?>
+							</div>
+							<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			<?php endif; ?>
+		</div>
+	</div>
 	<!-- Main Content -->
 	<div class="container">
 		<div class="info">
@@ -71,17 +100,17 @@
 			<form class="register-form" action="create" method="post">
 				<input type="text" placeholder="username" name="username" value="<?= old('username') ?>" />
 				<input type="text" placeholder="email address" name="email" value="<?= old('email') ?>" />
-				<input type="password" placeholder="password" name="password" />
-				<input type="password" placeholder="Confirm password" name="repassword" />
+				<input type="password" placeholder="password" name="password" value="<?= old('password') ?>" />
+				<input type="password" placeholder="Confirm password" name="repassword"  value="<?= old('repassword') ?>"/>
 				<input type="submit" value="Đăng ký" />			
 			</form>
 			<p class="message">Đã có tài khoản? <button onclick="sign_in()">Đăng nhập</button></p>
 		</div>
 
 		<div class="form-dangnhap">
-			<form class="login-form" action="index.php" method="post">
-				<input type="text" placeholder="username" name="username" />
-				<input type="password" placeholder="password" name="password" />
+			<form class="login-form" action="login" method="post">
+				<input type="text" placeholder="username" name="username" value="<?= old('username') ?>"/>
+				<input type="password" placeholder="password" name="password" value="<?= old('password') ?>"/>
 				<input type="submit" value="Đăng nhập" />
 			</form>
 			<p class="message">Chưa đăng ký? <button onclick="create_account()">Đăng ký</button></p>
@@ -112,7 +141,7 @@
 			});
 
 			// Nếu có lỗi thì show form đăng ký
-			<?php if(session()->getFlashdata('MESSAGE_ERROR')): ?>
+			<?php if(session()->getFlashdata('MESSAGE_REGISTER_ERROR')): ?>
 				create_account();
 			<?php endif; ?>
 		});

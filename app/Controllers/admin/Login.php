@@ -18,4 +18,18 @@ class Login extends BaseController
         $result = $this->service->themAdmin($this->request);
         return redirect()->back()->withInput()->with($result['messageCode'],$result['messages']);
     }
+    public function login(){
+        $result = $this->service->kiemTralogin($this->request);
+        if($result['status']  == 'SUCCESS'){
+        return redirect('admin/dashboard'); 
+    
+    } else {
+        return redirect()->back()->withInput()->with($result['messageCode'], $result['messages']);
+    }
+    return redirect('admin/login');
+    }
+    public function logout(){
+         session()->remove('user_login');
+        return redirect('admin/login');
+    }
 }
