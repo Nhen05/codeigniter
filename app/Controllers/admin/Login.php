@@ -21,7 +21,7 @@ class Login extends BaseController
     public function login(){
         $result = $this->service->kiemTralogin($this->request);
         if($result['status']  == 'SUCCESS'){
-        return redirect('admin/dashboard'); 
+            return redirect('admin/dashboard');
     
     } else {
         return redirect()->back()->withInput()->with($result['messageCode'], $result['messages']);

@@ -43,7 +43,7 @@
                                         </div>
                                         <div
                                             class="media-body media-text-right">
-                                            <h2></h2>
+                                            <h2><?= esc($totals['totalRes'])?></h2>
                                             <p class="m-b-0">Số bàn</p>
                                         </div>
                                     </div>
@@ -60,7 +60,7 @@
                                         </div>
                                         <div
                                             class="media-body media-text-right">
-                                            <h2></h2>
+                                            <h2><?= esc($totals['totalDishes'])?></h2>
                                             <p class="m-b-0">Món Ăn</p>
                                         </div>
                                     </div>
@@ -113,7 +113,7 @@
                                         </div>
                                         <div
                                             class="media-body media-text-right">
-                                            <h2></h2>
+                                            <h2><?= esc($totals['totalResCate'])?></h2>
                                             <p class="m-b-0">Danh Mục</p>
                                         </div>
                                     </div>

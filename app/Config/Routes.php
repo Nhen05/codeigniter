@@ -19,7 +19,8 @@ $routes->group("admin",function($routes){
     $routes->post('login', 'admin\Login::login');
     $routes->post('logout', 'admin\Login::logout');
     $routes->get('logout', 'admin\Login::logout');
-    $routes->get('allres', 'admin\Res::index');
+    $routes->get('restaurant', 'admin\Res::index');
+
 
 
 });

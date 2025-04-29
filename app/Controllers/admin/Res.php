@@ -1,11 +1,21 @@
 <?php
 namespace App\Controllers\admin;
-namespace App\Controllers\admin;
 
 use App\Controllers\BaseController;
+use App\Services\ResService;
 
-class Dashboard extends BaseController
-{
+
+
+class Res extends BaseController
+{   protected $restaurantList;
+   
+    public function __construct()
+    {
+        $this->restaurantList = new ResService();
+        
+
+    }
+    
     public function index()
     {
         $data = [];
@@ -13,7 +23,9 @@ class Dashboard extends BaseController
 
         if (session()->has('user_login')) {
             $data['user'] = session()->get('user_login');
-            return view('admin/resall', $data);
+            $data['resList'] = $this->restaurantList->getListRestaurant();
+            
+            return view('admin/restaurant', $data);
         } else {
             return redirect('admin/login');
         }

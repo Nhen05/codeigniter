@@ -123,7 +123,6 @@ class AdminService extends BaseService
             ];
         }
         $data = $requestData->getPost();
-
         $user = $this->layDataAdminTheoUsername($data['username']);
         if (!$user) {
             return [
@@ -143,7 +142,6 @@ class AdminService extends BaseService
         $session = session();
         unset($user['password']);
         $session->set('user_login', $user);
-    
         return [
             'status' => 'SUCCESS',
             'messageCode' => 'MESSAGE_LOGIN_SUCCESS',

@@ -55,7 +55,7 @@
                 <li> <a class="has-arrow" href="#" aria-expanded="false">
                     <i class="fa fa-cutlery"></i><span>Quản lý bàn</span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="all_restaurant.php">Danh sách bàn</a></li>
+                        <li><a href="http://localhost:8080/admin/restaurant">Danh sách bàn</a></li>
                         <li><a href="add_category.php">Thêm danh mục bàn</a></li>
                         <li><a href="add_restaurant.php">Thêm bàn mới</a></li>
                     </ul>

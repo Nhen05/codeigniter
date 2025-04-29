@@ -108,7 +108,7 @@
 		</div>
 
 		<div class="form-dangnhap">
-			<form class="login-form" action="login" method="post">
+		<form class="register-form" action="login" method="post">
 				<input type="text" placeholder="username" name="username" value="<?= old('username') ?>"/>
 				<input type="password" placeholder="password" name="password" value="<?= old('password') ?>"/>
 				<input type="submit" value="Đăng nhập" />
